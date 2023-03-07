@@ -10,8 +10,8 @@ namespace CookingRecipe
     {
         //account(usernamme, password, firstname, lastname, email address, bdate, address, phonenumber)
         public string Name { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public string Email { get;private set; }
+        private string password;
         public string Address { get; set; }
         public DateTime Birtdate { get; set; }
         public string Phonenumber { get; set; }
@@ -20,7 +20,7 @@ namespace CookingRecipe
         {
             this.Name = name;
             this.Email = email;
-            this.Password = password;
+            this.password = password;
             this.Address = address;
             this.Birtdate = birtdate;
             this.Phonenumber = phonenumber;

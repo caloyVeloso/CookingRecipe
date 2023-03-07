@@ -11,18 +11,13 @@ namespace CookingRecipe
         //Enum: tsp,tbsp,fl_oz,c,pt,qt,gal
         public string Name { get; private set; }
         public int Unit { get; private set; }
-        public Volume Volume { get; private set; }
+        public Measurement Measurement { get; private set; }
 
-        public Ingredient(string name, int unit, Volume volume)
+        public Ingredient(string name, int unit, Measurement measurement)
         {
-            Name = name;
-            Unit = unit;
-            Volume = volume;
-        }
-
-        public override string ToString()
-        {
-            return "Name: " + this.Name + "\n" + "Unit: " + this.Unit + "\n" + "Volume: " + this.Volume;
+            this.Name = name;
+            this.Unit = unit;
+            this.Measurement = measurement;
         }
     }
 }

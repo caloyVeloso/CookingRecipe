@@ -8,15 +8,14 @@ namespace CookingRecipe
 {
     public class MainDish:Recipe
     {
-        public string MainProtein { get;private set; }
-        public int CookingTime { get; private set; }
+        public String MainProtein { get;private set; }
+        public string  CookingTime { get; private set; }
 
-        public MainDish (string name, List<Ingredient> ingredients, Difficulty difficulty, List<string> procedure, string mainprotein, int cookingtime):
+        public MainDish (string name, List<Ingredient> ingredients, Difficulty difficulty, List<string> procedure, string cookingtime):
             base (name, ingredients, difficulty, procedure)
         {
-            this.MainProtein = mainprotein;
+            this.MainProtein = ingredients[0].Name;
             this.CookingTime = cookingtime;
         }
-
     }
 }

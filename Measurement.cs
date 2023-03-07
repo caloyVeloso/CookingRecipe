@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CookingRecipe
 {
-    public enum Volume
+    public enum Measurement
     {
-        tsp, tbsp, fl_oz, c, pt, qt, gal
+        tsp,tbsp,cup,cloves,pc
     }
 }
