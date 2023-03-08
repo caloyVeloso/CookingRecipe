@@ -10,8 +10,8 @@ namespace CookingRecipe
     {
         public Temperature Temperature { get; private set; }    
 
-        public Dessert(string name, List<Ingredient> ingredients, Difficulty difficulty, List<string> procedure,Temperature temperature):
-            base(name, ingredients, difficulty, procedure)
+        public Dessert(string name, List<Ingredient> ingredients, int servingSize,Difficulty difficulty, List<string> procedure,Temperature temperature):
+            base(name, ingredients, servingSize, difficulty, procedure)
         { 
             this.Temperature = temperature;
         }

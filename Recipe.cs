@@ -16,10 +16,11 @@ namespace CookingRecipe
 
         public List<string> Procedure;
 
-        public Recipe(string name,List<Ingredient> ingredients,Difficulty difficulty,List<string> procedure) 
+        public Recipe(string name,List<Ingredient> ingredients, int servingSize, Difficulty difficulty,List<string> procedure) 
         {
             this.Name = name;
             this.Ingredients = ingredients;
+            this.ServingSize = servingSize;
             this.Difficulty = difficulty;
             this.Procedure  = procedure;
         }

@@ -41,7 +41,7 @@ public class Program
         List<string> strings = new List<string>(); 
         for(int i = 0; i < 2; i++)
             strings.Add(step[i]);
-        MainDish adobo = new MainDish("Adobo", ingre, Difficulty.Moderate, strings, "40min");
+        MainDish adobo = new MainDish("Adobo", ingre, 5, Difficulty.Moderate, strings, "40min");
 
         Console.WriteLine("name: "+adobo.Name);   
         Console.WriteLine("Main Protein: " + adobo.MainProtein);
